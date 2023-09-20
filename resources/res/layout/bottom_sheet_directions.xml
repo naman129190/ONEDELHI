@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_sheet" android:background="@drawable/round_bottom_sheet_background" android:padding="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="false" app:behavior_peekHeight="250dp" app:layout_behavior="@string/bottom_sheet_behavior">
+    <ImageView android:id="@+id/iv_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_rectangle_bottom_sheet"/>
+    <ExpandableListView android:id="@+id/lvExp" android:visibility="visible" android:clickable="true" android:longClickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/standard_8" android:layout_marginBottom="@dimen/standard_8" android:layout_marginStart="@dimen/standard_8" android:layout_marginEnd="@dimen/standard_16"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView android:id="@+id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:layout_marginBottom="120dp"/>
+    <RelativeLayout android:id="@+id/rl_heading" android:background="@drawable/white_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_4" android:contentDescription="@string/back" app:srcCompat="@drawable/ic_back_arrow" app:tint="@color/black" style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_14" android:weightSum="1" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_back">
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:id="@+id/tv_source" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Route Directions" android:lines="1" android:layout_weight="0.45" android:fontFamily="@font/roboto_regular" android:layout_marginEnd="6dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_swap" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_swap" android:layout_weight="0.1" app:tint="@color/black"/>
+            <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start" android:layout_gravity="center" android:id="@+id/tv_destination" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:text="Route Directions" android:lines="1" android:layout_weight="0.45" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/dimen_6dp" android:layout_marginEnd="@dimen/standard_4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/bottom_sheet_directions"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:id="@+id/ib_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/back" app:srcCompat="@drawable/ic_back_arrow" app:tint="@color/black" style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_passCount" android:padding="@dimen/standard_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passes_so_far" android:layout_alignParentEnd="true"/>
+    <include android:id="@+id/card_no_pass" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ib_back" layout="@layout/past_pass_item"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/passes_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/standard_16" android:layout_below="@+id/ib_back"/>
+</RelativeLayout>

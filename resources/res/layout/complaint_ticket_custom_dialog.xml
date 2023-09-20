@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:padding="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_8">
+        <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_heading_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:text="Ticket Created Successfully!"/>
+        <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+        <TextView android:textSize="@dimen/dimen_18dp" android:textColor="@color/one_delhi_red" android:layout_gravity="center" android:id="@+id/ticket_id_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Ticket id is " android:fontFamily="sans-serif-medium"/>
+        <TextView android:textColor="@color/gray_444444" android:gravity="center" android:id="@+id/more_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="5dp" android:text="You&apos;ll recive an email shorlty"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_ok_custom" android:background="@drawable/round_button_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="5dp" android:text="Ok" android:backgroundTint="@color/red_bar"/>
+    </LinearLayout>
+</LinearLayout>

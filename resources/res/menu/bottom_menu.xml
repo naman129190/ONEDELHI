@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_bus" android:enabled="true" android:id="@+id/action_live" android:title="@string/live" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_ticket" android:enabled="true" android:id="@+id/action_tickets" android:title="@string/tickets" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_ev_station" android:enabled="true" android:id="@+id/action_ev" android:title="@string/ev_stations" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_directions" android:enabled="true" android:id="@+id/action_directions" android:visible="true" android:title="Trip Plan" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_support" android:enabled="true" android:id="@+id/action_support" android:title="@string/help" app:showAsAction="ifRoom"/>
+</menu>

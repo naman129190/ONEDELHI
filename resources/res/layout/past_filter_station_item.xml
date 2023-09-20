@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rv_main" android:background="@color/white" android:padding="@dimen/standard_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/past" app:srcCompat="@drawable/ic_past_tickets" app:tint="#838383"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_stationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_16" android:layout_toEndOf="@+id/iv_1"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_stationAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_8" android:layout_toEndOf="@+id/tv_stationName"/>
+</RelativeLayout>

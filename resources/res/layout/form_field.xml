@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{form_field.display_name}"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_field_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@{form_field.field_name}"/>
+    <TextView android:textColor="@color/metro_red" android:id="@+id/tv_asterisks" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_and_asterisks" android:layout_toEndOf="@+id/tv_display_name"/>
+    <EditText android:id="@+id/et_display_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_8" android:layout_below="@+id/tv_display_name" android:textCursorDrawable="@null"/>
+</RelativeLayout>

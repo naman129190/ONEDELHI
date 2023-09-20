@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/up_line" android:layout_width="2dp" android:layout_height="@dimen/standard_36" android:contentDescription="@string/line" android:layout_marginStart="21dp" app:srcCompat="@drawable/vertical_line"/>
+    </LinearLayout>
+    <TextView android:textColor="#828282" android:ellipsize="end" android:id="@+id/tv_stop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_16" android:layout_toEndOf="@+id/ll"/>
+</RelativeLayout>

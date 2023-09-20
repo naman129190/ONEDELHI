@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_about_trip" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/textAboutRoute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_marginBottom="@dimen/standard_8" android:text="@string/recommended_route" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_16" android:layout_marginEnd="@dimen/standard_16" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tv_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_marginBottom="@dimen/standard_8" android:text="Reaches in" android:fontFamily="@font/roboto_medium" android:layout_marginStart="@dimen/standard_16" android:layout_marginEnd="@dimen/standard_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_below="@+id/rl_about_trip" android:layout_marginStart="@dimen/standard_16" android:layout_marginEnd="@dimen/standard_16">
+            <HorizontalScrollView android:id="@+id/hsv" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:isScrollContainer="true" android:layout_alignParentStart="true">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="12dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/route_icons_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ImageView android:id="@+id/iv_new" android:background="@drawable/ic_broadcast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_4" android:layout_toEndOf="@+id/route_icons_layout"/>
+                    <TextView android:textSize="12sp" android:textColor="#828282" android:id="@+id/tv_depart_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_below="@+id/route_icons_layout" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_16"/>
+                    <TextView android:textSize="12sp" android:textColor="#828282" android:id="@+id/textStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_below="@+id/route_icons_layout" android:fontFamily="@font/roboto_regular" android:layout_marginStart="@dimen/standard_16"/>
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_8" android:layout_below="@+id/rl_info" android:layout_marginStart="@dimen/standard_16" android:layout_marginEnd="@dimen/standard_16">
+            <TextView android:textSize="15sp" android:textColor="#1c2626" android:id="@+id/tv_boarding_stop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/roboto_regular" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="12sp" android:textColor="#828282" android:id="@+id/tv_bus_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leaves_at_from" android:layout_toStartOf="@+id/textTimeRange" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="15sp" android:textColor="#1c2626" android:id="@+id/textTimeRange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/roboto_black" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="14sp" android:textColor="#828282" android:id="@+id/textFare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textTimeRange" android:fontFamily="@font/roboto_regular"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_1" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rl_1"/>
+    </RelativeLayout>
+</LinearLayout>

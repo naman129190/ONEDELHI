@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <p005me.dm7.barcodescanner.zxing.ZXingScannerView android:id="@+id/zx_scanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="220dp" android:layout_alignParentTop="true" app:borderColor="@color/white" app:cornerRadius="@dimen/standard_8" app:roundedCorner="true" app:squaredFinder="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/tv_1" android:paddingTop="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_qr_present_in_the_bus" android:layout_centerHorizontal="true"/>
+        <ImageButton android:id="@+id/ib_torch_off" android:background="@color/zxing_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="Torch off" android:layout_toStartOf="@+id/view_1" app:srcCompat="@drawable/ic_torch_on" style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+        <ImageButton android:id="@+id/ib_torch_on" android:background="@color/zxing_transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="Torch off" android:layout_toStartOf="@+id/view_1" app:srcCompat="@drawable/ic_torch_off" app:tint="@color/white" style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+        <View android:id="@+id/view_1" android:layout_width="@dimen/standard_8" android:layout_height="match_parent" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cross" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_back_arrow" app:tint="@color/white" style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+    </RelativeLayout>
+    <include android:id="@+id/bottom_sheet" layout="@layout/bottom_sheet_bus_number"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

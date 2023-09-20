@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/standard_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/one_delhi_red" android:id="@+id/tv_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list_faq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_4"/>
+</LinearLayout>

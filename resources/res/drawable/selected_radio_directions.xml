@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <solid android:color="@color/one_delhi_red"/>
+            <padding android:left="@dimen/standard_8" android:top="@dimen/standard_4" android:right="@dimen/standard_8" android:bottom="@dimen/standard_4"/>
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+</layer-list>

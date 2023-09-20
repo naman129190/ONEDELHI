@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pass_type_round_box" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_close" android:padding="@dimen/standard_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cross" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_cross" app:tint="@color/black"/>
+    <RelativeLayout android:id="@+id/rv_main" android:paddingBottom="@dimen/standard_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_16" android:paddingEnd="@dimen/standard_16">
+        <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:fontFamily="@font/roboto_regular"/>
+        <EditText android:id="@+id/edTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title" android:inputType="textPersonName" android:importantForAutofill="2"/>
+        <Button android:textColor="@color/white" android:id="@+id/btn_send" android:background="@drawable/round_button_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_4" android:text="@string/set" android:layout_below="@+id/edTitle" style="@style/Widget.AppCompat.Button"/>
+    </RelativeLayout>
+</RelativeLayout>

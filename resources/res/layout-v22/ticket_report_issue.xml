@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/tv_1" android:padding="@dimen/standard_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_problem" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/rv_issues" android:paddingBottom="@dimen/standard_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_1" android:paddingStart="@dimen/standard_16" android:paddingEnd="@dimen/standard_16">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tv_2" android:padding="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_issue"/>
+            <RadioGroup android:id="@+id/rg_issues" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_2">
+                <RadioButton android:id="@+id/rb_refund" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund"/>
+                <RadioButton android:id="@+id/rb_stop_names" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_with_stop_names"/>
+                <RadioButton android:id="@+id/rb_fare" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wrong_fare"/>
+                <RadioButton android:id="@+id/rb_ticket" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_not_showing"/>
+                <RadioButton android:id="@+id/rb_other" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other_issue"/>
+            </RadioGroup>
+            <EditText android:textColor="@color/black" android:id="@+id/edit_issue" android:padding="@dimen/standard_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:hint="@string/description" android:layout_below="@+id/rg_issues" android:inputType="text" android:importantForAutofill="2"/>
+            <EditText android:textColor="@color/black" android:id="@+id/edit_contact" android:padding="@dimen/standard_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/contact_number" android:layout_below="@+id/edit_issue" android:inputType="text" android:importantForAutofill="2"/>
+        </RelativeLayout>
+        <TableRow android:id="@+id/tr_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rv_issues" android:layout_marginStart="@dimen/standard_8" android:layout_marginEnd="@dimen/standard_8">
+            <Button android:textColor="@color/white" android:id="@+id/btn_cancel" android:background="@color/red_ticket_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:layout_marginBottom="@dimen/standard_8" android:text="@string/cancel" android:layout_weight="1" android:layout_marginStart="@dimen/standard_8" android:layout_marginEnd="@dimen/standard_4" style="@style/Widget.AppCompat.Button"/>
+            <Button android:textColor="@color/white" android:id="@+id/btn_send" android:background="@color/comfort_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:text="@string/submit" android:layout_weight="1" android:layout_marginStart="@dimen/standard_4" android:layout_marginEnd="@dimen/standard_8" style="@style/Widget.AppCompat.Button"/>
+        </TableRow>
+    </RelativeLayout>
+</ScrollView>

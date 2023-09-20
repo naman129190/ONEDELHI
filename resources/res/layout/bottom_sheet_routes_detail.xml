@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_sheet" android:background="@drawable/round_bottom_sheet_background" android:padding="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true" app:behavior_peekHeight="240dp" app:layout_behavior="@string/bottom_sheet_behavior">
+    <ImageView android:id="@+id/iv_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_rectangle_bottom_sheet"/>
+    <View android:id="@+id/top_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="70dp" android:layout_below="@+id/iv_rect"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_stops_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_16" android:fontFamily="@font/roboto_bold" android:layout_marginStart="@dimen/standard_8" android:layout_marginEnd="@dimen/standard_16"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_exp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/standard_8" android:layout_marginBottom="@dimen/standard_8" android:layout_below="@+id/tv_stops_count"/>
+</RelativeLayout>

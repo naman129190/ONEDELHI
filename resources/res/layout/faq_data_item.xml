@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rv_faq_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_4">
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lorem ipsum dolor sit amet" android:lineSpacingExtra="0.2sp" android:layout_marginEnd="@dimen/standard_4" android:layout_toStartOf="@+id/iv_show_desc"/>
+    <ImageView android:id="@+id/iv_show_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_add_circle" android:layout_marginEnd="@dimen/standard_4" android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="14sp" android:textColor="#787878" android:id="@+id/tv_description" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_4" android:layout_below="@+id/tv_title" android:lineSpacingExtra="3sp"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="issue_category_array">
+        <item>Others</item>
+        <item>Driver</item>
+        <item>Conductor</item>
+        <item>Marshall</item>
+        <item>Bus queue shelter</item>
+        <item>Bus</item>
+        <item>EV charging</item>
+    </array>
+</resources>

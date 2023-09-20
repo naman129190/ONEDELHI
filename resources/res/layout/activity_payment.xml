@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_top_bar" android:background="@color/one_delhi_red" android:padding="@dimen/standard_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/back" app:srcCompat="@drawable/ic_back_arrow" app:tint="@color/white"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/tv_txn_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Complete Payment" android:layout_centerVertical="true" android:layout_marginStart="@dimen/standard_16" android:layout_toEndOf="@+id/iv_back"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/round_button_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" android:elevation="10dp">
+                <RelativeLayout android:id="@+id/rv_ticket_top" android:background="@drawable/top_round_corner" android:padding="@dimen/standard_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/black">
+                    <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/white" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/roboto_medium" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/white" android:id="@+id/tv_bus_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/roboto_medium" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_4dp" android:layout_marginEnd="@dimen/dimen_4dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/img_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bus" android:layout_weight="0.1"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:layout_gravity="center" android:id="@+id/tv_route_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Route name" android:lines="1" android:layout_weight="0.8" android:paddingStart="2dp"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+                        <TextView android:textSize="15sp" android:textColor="#1c2626" android:id="@+id/tv_fare_per_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                        <TextView android:textSize="15sp" android:textColor="#1c2626" android:id="@+id/tv_ticket_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                        <TextView android:textSize="16.5sp" android:textStyle="bold" android:textColor="#64dd17" android:id="@+id/tv_payable_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="8dp">
+                    <TextView android:textSize="14.5sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_starting_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start Stop" android:layout_centerVertical="true" android:paddingStart="@dimen/standard_8" android:layout_toStartOf="@+id/iv_arrow" android:layout_alignParentStart="true"/>
+                    <ImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_arrow" android:layout_centerInParent="true" android:rotation="180"/>
+                    <TextView android:textSize="14.5sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_ending_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="End Stop" android:layout_centerVertical="true" android:paddingEnd="@dimen/standard_8" android:layout_toEndOf="@+id/iv_arrow" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_upi" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_wallet_main">
+                <TextView android:textSize="15sp" android:paddingTop="@dimen/standard_16" android:paddingBottom="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UPI" android:paddingStart="@dimen/standard_16" android:paddingEnd="@dimen/standard_16"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/gray_8ba6c1" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_no_upi" android:background="@color/white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No supported UPI apps found in your device"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_upi_options" android:background="@color/white" android:paddingTop="@dimen/standard_8" android:paddingBottom="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_upi"/>
+            <RelativeLayout android:id="@+id/rl_upi" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_wallet_main">
+                <TextView android:textSize="15sp" android:paddingTop="@dimen/standard_16" android:paddingBottom="@dimen/standard_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Others " android:paddingStart="@dimen/standard_16" android:paddingEnd="@dimen/standard_16"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_other_payment_method" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/card_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_payment_24" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/standard_8"/>
+                <TextView android:textSize="16sp" android:textColor="#1c2626" android:id="@+id/tv_others_payment_methods" android:padding="@dimen/standard_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wallet, Cards or Net banking" android:fontFamily="@font/roboto_regular" android:layout_toEndOf="@+id/card_img"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

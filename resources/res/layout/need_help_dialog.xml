@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rv_main" android:padding="@dimen/standard_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/need_help" android:layout_centerHorizontal="true" android:fontFamily="@font/roboto_medium"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_8" android:text="@string/need_help_body" android:layout_below="@+id/tv_1" android:lineSpacingExtra="@dimen/standard_8"/>
+    <TableRow android:id="@+id/tr_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_24" android:layout_below="@+id/tv_2">
+        <Button android:textColor="@color/black" android:id="@+id/btn_cancel" android:background="@drawable/round_button_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" android:textAllCaps="false" android:layout_marginEnd="@dimen/standard_8" style="@style/Widget.AppCompat.Button.Colored"/>
+        <Button android:id="@+id/btn_accept" android:background="@drawable/round_button_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/continue_btn" android:layout_weight="1" android:textAllCaps="false" android:layout_marginStart="@dimen/standard_8" style="@style/Widget.AppCompat.Button.Colored"/>
+    </TableRow>
+</RelativeLayout>
